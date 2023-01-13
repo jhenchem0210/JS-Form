@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
+   <!-- Google Fonts Roboto -->
+       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"/>
+   <!-- Favicon -->
+       <link href="img/favicon.ico" rel="icon">
+   
+   <!-- Google Web Fonts -->
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+   
+    <title>Form Validation</title>
+</head>
+<body>
+    
+<div class="container">
+    <div class="content">
+      
+      <div class="image"></div>
+      <div class="text">
+        Start FREE TRIAL & get <br />
+        more irresistible offers today !
+      </div>
+    </div>
+
+    <form id="form">
+      <div class="social">
+        <div class="title">Get Started</div>
+        <div class="question">
+          Already Have an Account?
+     
+<!------------------------Modal Login Start------------------>
+
+<div class="container">
+    <button type="button" class="btn btn-info text-dark" data-bs-toggle="modal" data-bs-target="#myModal"> Sign In
+    </button>
+</div>
+
+<!---------Modal Login Header---------->
+
+<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="myModal" aria-hidden="true">
+    <div class="modal-dialog d-flex justify-content-center">
+        <div class="modal-content w-75">
+            <div class="modal-header">
+                    <h5 class="modal-title" id="myModal">Sign in</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+<!---------Modal Login Body---------->
+
+<div class="modal-body p-4">
+                <form>
+                    <!-- Email input -->
+                    <div class="form-outline mb-4">
+                        <input type="email" id="email1" class="form-control" />
+                        <label class="form-label" for="email1">Email address</label>
+                    </div>
+
+                    <!-- password input -->
+                    <div class="form-outline mb-4">
+                        <input type="password" id="password1" class="form-control" />
+                        <label class="form-label" for="password1">Password</label>
+                    </div>
+
+                    <!-- Submit button -->
+                    <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+                </form>
+
+                    <div class="d-flex justify-content-center text-center mt-4 pt-1">
+                        <a href="https://www.facebook.com" class="text-dark"><i class="fab fa-facebook-f fa-lg mx-4 px-2"></i></a>
+                        <a href="https://www.twitter.com" class="text-dark"><i class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                        <a href="https://mail.google.com" class="text-dark"><i class="fab fa-google fa-lg mx-4 px-2"></i></a>
+                    </div>
+</div>
+<!--------Modal Login Footer------->
+<div>
+    <p class="mb-1 text-center"> Don't have an account? <a href="index.html" class="text-dark-50 fw-bold">Sign Up</a>
+    </p>
+</div>
+    </div>
+        </div>
+            </div>
+  <!----Social Media Sign Up---->
+        
+          <div class="btn-1">
+            <a href="https://mail.google.com"><img src="https://img.icons8.com/color/30/000000/google-logo.png"></a>
+            Sign Up
+          </div>
+
+          <div class="btn-2">
+            <a href="https://www.facebook.com"><img src="https://img.icons8.com/ios-filled/30/ffffff/facebook-new.png"></a>
+            Sign Up
+          </div>
+        
+
+        <div class="or">Or</div>
+      </div>
+
+      <!-- /** 
+            * ! user name Input here
+           **/ -->
+  
+      <div>
+        <label for="username">User Name</label>
+        <i class="fas fa-user"></i>
+        <input type="text" name="username" id="username" placeholder="Arjhen Bravo" />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+  
+      <!-- /** 
+            * ! Email Input here
+           **/ -->
+  
+      <div>
+        <label for="email">Email</label>
+        <i class="far fa-envelope"></i>
+        <input type="email" name="email" id="email" placeholder="abc@gmail.com" />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+  
+      <!-- /** 
+            * ! Password Input here
+           **/ -->
+  
+      <div>
+        <label for="password">Password</label>
+        <i class="fas fa-lock"></i>
+        <input type="password" name="password" id="password" placeholder="Password here" />
+        <i class="fas fa-exclamation-circle failure-icon"></i>
+        <i class="far fa-check-circle success-icon"></i>
+        <div class="error"></div>
+      </div>
+  
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+  
+
+ <!-- JavaScript Libraries -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" ></script>
+ <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" ></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+ <script src="lib/easing/easing.min.js"></script>
+
+ <!-- Contact Javascript File -->
+ <script src="mail/jqBootstrapValidation.min.js"></script>
+ <script src="mail/contact.js"></script>
+
+ <!-- Template Javascript -->`
+<script src="main.js"></script>
+
+</body>
+</html>
